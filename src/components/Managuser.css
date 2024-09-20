@@ -1,0 +1,123 @@
+/* src/Category.css */
+.new {
+    width: 100%;
+    border-collapse: collapse;
+    overflow-x: auto; /* Ensure table can be scrolled horizontally if needed */
+    margin-top: 3rem;
+  
+}
+.zadmin{
+    /* margin-top: 2rem; */
+    /* margin-top: 10px; */
+    /* padding-top: 10px; */
+ /* margin-top: -50px; */
+ /* width: 96%; */
+ 
+ 
+}
+.category-table th,
+.category-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.category-table th {
+    background-color: #f2f2f2;
+}
+
+.category-table td {
+    background-color: #fff;
+}
+
+.category-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+button {
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .azi{
+        margin-top: -50px;
+    }
+    .category-table {
+        font-size: 14px;
+    }
+
+    .category-table th,
+    .category-table td {
+        padding: 6px;
+    }
+
+    button {
+        padding: 4px 8px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .new {
+        font-size: 12px;
+    }
+
+    .new th,
+    .new td {
+        padding: 4px;
+    }
+
+    button {
+        padding: 3px 6px;
+        font-size: 10px;
+    }
+
+    /* Make sure table is scrollable horizontally on very small screens */
+    .new{
+        display: block;
+        overflow-x: auto;
+    }
+    .new{
+margin-left: 0rem;
+    }
+
+ 
+}
+@media (max-width: 390px) {
+    .new{
+        margin-left: 0rem;
+    }
+    .new:before {
+        display: block;
+        overflow-x: auto;
+    }
+    .new th,
+    .new td {
+        padding: 1px; /* Reduced padding */
+    }
+
+}
+@media (max-width: 360px) {
+    .new th,
+    .new td {
+        padding: 1px; /* Reduced padding */
+    }
+    .new{
+        margin-left: 0rem;
+    }
+    .new {
+        font-size: 11px;
+        display: block;
+        overflow-x: auto;
+    }}
+

@@ -1,0 +1,86 @@
+/* admin.css */
+
+.admin-dashboard {
+    display: flex;
+   
+}
+
+.sidebar {
+
+    width: 250px;
+    background-color: #333;
+    color: white;
+    transition: transform 0.3s ease;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    z-index: 1000; /* Ensure the sidebar is on top */
+    overflow-y: auto;
+}
+
+.sidebar.open {
+    transform: translateX(0);
+}
+
+.sidebar .logo-container {
+    padding: 20px;
+}
+
+.sidebar .nav-links {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar .nav-item {
+    padding: 15px 20px;
+}
+
+.hamburger-menu {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #333;
+    /* background-color: red; */
+    position: fixed;
+    /* width: 100%; */
+    top: 10px;
+    left: 10px;
+    z-index: 1100; /* Ensure the hamburger menu is on top */
+ 
+}
+
+
+
+@media (max-width: 768px) {
+    .logo-container{
+        margin-top: 2.5rem;
+    }
+    .sidebar {
+        transform: translateX(-100%);
+    }
+
+    .sidebar.open {
+        transform: translateX(0);
+    }
+
+    .hamburger-menu {
+        display: block;
+       
+    }
+}
+
+.content {
+    margin-left: 250px;
+    padding: 20px;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .content {
+        margin-left: 0;
+        padding: 10px;
+    }
+}
